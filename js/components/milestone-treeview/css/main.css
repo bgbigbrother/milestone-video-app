@@ -1,0 +1,48 @@
+:host, :host([show=false]) {
+  display: none;
+}
+
+:host([show=true]) {
+   display: inline-block;
+}
+
+.hidden {
+  display: none;
+}
+
+ul {
+  list-style: none;
+}
+
+ul.root {
+  margin:0;
+  padding:0;
+}
+
+.trigger {
+  cursor: pointer;
+  user-select: none;
+}
+
+.trigger::before {
+  content: "\25B6";
+  color: black;
+  display: inline-block;
+  margin-right: 6px;
+}
+
+.trigger-down::before {
+  transform: rotate(90deg);
+}
+
+.nested {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+li[type="Camera"] {
+  cursor: pointer;
+}

@@ -1,0 +1,23 @@
+:host, :host([show=false]) {
+  display: none;
+}
+
+:host([show=true]) {
+   display: inline-block;
+}
+fieldset {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+input, button {
+  display: block;
+}
+
+input {
+  margin-bottom: 12px;
+}
+
+.hidden {
+  display: none;
+}
